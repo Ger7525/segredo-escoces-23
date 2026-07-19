@@ -1,18 +1,196 @@
 @charset "UTF-8";
 
+@font-face {
+              font-family: 'medieval';
+              src: url(../fonts/MedievalSharp/MedievalSharp-Regular.ttf) format('truetype');
+}
+:root{
+  /* Cores Principais */
+  --verde-priorado: #006B38;
+  --verde-escuro: #004D29;
+
+  --dourado: #F2C200;
+  --dourado-claro: #FFD84D;
+  --dourado-escuro: #C89B00;
+
+  --vermelho-cruz: #F51409;
+  --vermelho-escuro: #B30000;
+
+  /* Neutras */
+  --branco: #FFFFFF;
+  --cinza-claro: #F5F5F5;
+  --cinza-medio: #D9D9D9;
+  --preto: #1A1A1A;
+
+   /*fonte do h1*/
+  --titulo:medieval;  
+
+
+}
 *{
   margin: 0;
-  padding: 0;                  
+  padding: 0; 
+  box-sizing: border-box;                
 }
 body{
-    background: #F4F4F4;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cinza-claro);
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  display:flex;
+  width: 100%;
+  height: 300px;
+  background-color: var(--branco);
+  box-sizing: border-box;
+}
+header div.header-left{
+  max-width: 20%;
+  display: block;
+  
+}
+.header-left a img{
+  width: 250px;
+  display: block;
+ 
+  
 }
 
-header{
-   max-width: 1200px ;
-   margin: 0 auto; 
+.header-centro{
+  max-width:65%;
+  display: block;
+  color: var(--verde-escuro);
+  text-align: center;
+  font-family: var(--titulo);
+  margin: auto;
+}
+.header-centro h1{
+  font-size: 3rem;
+  text-shadow: 2px 2px 2px var(--verde-priorado));
+}
+.header-centro p{
+  font-size: 1.5rem;
+  margin-top: 10px;
+  text-shadow: 1px 1px 1px var(--verde-priorado) ;
+}
+.header-rigth{
+  max-width: 15%;
   
-               
+}
+.header-rigth a{
+  text-decoration: none;
+  margin-right: 10px;
+
+  
+}
+.header-rigth a img{
+  display: block;
+  height: 100px;
+  margin: 10px auto ;
+  transition: all 0.99s;
+
+}
+.header-rigth a img:hover{
+  height: 120px;
+}
+nav{
+  background-color: var(--vermelho-cruz);
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+nav a{
+  text-decoration: none;
+  margin: auto 30px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--branco);
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 1.5s;
+  font-family: var(--titulo);
+  
+}
+nav a:hover{
+  border:1px solid var(--dourado);
+  background-color: var(--dourado-claro);
+  color: var(--vermelho-escuro);
+   padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+
+
+}
+main{
+  max-width: 100%;
+  display: flex;
+  margin: 30px;
+}
+.vertical-left{
+  max-width: 30%;
+  border: 1px solid var(--cinza-medio);
+  background-color: var(--branco);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--verde-priorado);
+}
+.vertical-left h2{
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: var(--titulo);
+  color: var(--verde-priorado);
+  padding: 10px;
+}
+.vertical-left p{
+  text-align: justify;
+  padding: 10px;
+  line-height: 2em;
+}
+div.emblema{
+  text-align: center;
+}
+.emblema img{
+  height: 150px;
+  padding: 10px;
+  
+}
+.foto-evento{
+  border: 1px solid var(--cinza-medio);
+  text-align: center;
+  background-color: var(--cinza-claro);
+  
+  }
+.foto-evento img{
+  width: 90%;
+  margin: 10px;
+}
+/*pagina rito*/
+.rito{
+  width: 70%;
+  margin: 20px auto;
+  border: 1px solid var(--cinza-medio);
+  background-color: var(--branco);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--verde-priorado);
+  
+}
+.rito h2, h3{
+  margin: 20px;
+  padding: 20px;
+  font-family: var(--titulo);
+  color: var(--verde-priorado);
+}
+.rito p{
+  padding: 20px;
+  text-align: justify;
+  line-height: 1.5em;
+  margin: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.rito li{
+  margin: 20px;
+  padding: 10px;
+  line-height: 1.5em;
+  text-align: justify;
+
 }
