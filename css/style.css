@@ -125,8 +125,9 @@ main{
   display: flex;
   margin: 30px;
 }
+/*menu-vertical*/
 .vertical-left{
-  max-width: 30%;
+  max-width: 25%;
   border: 1px solid var(--cinza-medio);
   background-color: var(--branco);
   padding: 10px;
@@ -193,4 +194,47 @@ div.emblema{
   line-height: 1.5em;
   text-align: justify;
 
+}
+/*main-central pafina index*/
+.eventos-loja{
+   max-width: 50%;
+  border: 1px solid var(--cinza-medio);
+  background-color: var(--branco);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--verde-priorado);
+  margin: 0 30px;
+}
+
+.eventos-loja span img{
+  width: 100px;
+  
+  
+}
+.eventos-loja h2{
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: var(--titulo);
+  color: var(--verde-priorado);
+  padding: 10px;
+}
+.eventos-loja p{
+   text-align: justify;
+  padding: 10px;
+  line-height: 2em;
+}
+.img-evento-loja {
+  text-align: center;
+  
+}
+.img-evento-loja img{
+  width: 90%;
+}
+.banner{
+  text-align: center;
+  border: 3px solid var(--cinza-medio);
+  box-shadow: 0 0 3px var(--verde-priorado)
+}
+.banner img{
+  width: 90%;
 }
