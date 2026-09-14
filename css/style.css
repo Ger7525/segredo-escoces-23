@@ -30,211 +30,48 @@
 *{
   margin: 0;
   padding: 0; 
-  box-sizing: border-box;                
+               
 }
 body{
   background-color: var(--cinza-claro);
   font-family: Arial, Helvetica, sans-serif;
 }
 header{
-  display:flex;
-  width: 100%;
-  height: 300px;
-  background-color: var(--branco);
-  box-sizing: border-box;
+ background-color: #fff;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+ align-content: center;
+ align-items: center;
+ padding:20px;
 }
-header div.header-left{
-  max-width: 20%;
-  display: block;
-  
+.header-left img{
+  width: 200px;
 }
-.header-left a img{
-  width: 250px;
-  display: block;
- 
-  
-}
-
 .header-centro{
-  max-width:65%;
-  display: block;
-  color: var(--verde-escuro);
   text-align: center;
-  font-family: var(--titulo);
-  margin: auto;
-}
-.header-centro h1{
-  font-size: 3rem;
-  text-shadow: 2px 2px 2px var(--verde-priorado));
-}
-.header-centro p{
-  font-size: 1.5rem;
-  margin-top: 10px;
-  text-shadow: 1px 1px 1px var(--verde-priorado) ;
-}
-.header-rigth{
-  max-width: 15%;
-  
-}
-.header-rigth a{
-  text-decoration: none;
-  margin-right: 10px;
-
-  
-}
-.header-rigth a img{
-  display: block;
-  height: 100px;
-  margin: 10px auto ;
-  transition: all 0.99s;
-
-}
-.header-rigth a img:hover{
-  height: 120px;
-}
+  padding: 10px;
+  color: #004D29;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.489);
+} 
 nav{
-  background-color: var(--vermelho-cruz);
-  max-width: 100%;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  height: 100px;
+  background-color: #F51409;
+
 }
 nav a{
+  color:#F5F5F5;
+  text-align: center;
   text-decoration: none;
-  margin: auto 30px 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--branco);
   padding: 8px 16px;
-  border-radius: 8px;
-  transition: all 1.5s;
-  font-family: var(--titulo);
-  
+  transition: all 0.3s;
 }
 nav a:hover{
-  border:1px solid var(--dourado);
-  background-color: var(--dourado-claro);
-  color: var(--vermelho-escuro);
-   padding: 8px 16px;
-  border-radius: 8px;
-  font-size: 1.5rem;
-
-
-}
-main{
-  max-width: 100%;
-  display: flex;
-  margin: 30px;
-}
-/*menu-vertical*/
-.vertical-left{
-  max-width: 25%;
-  border: 1px solid var(--cinza-medio);
-  background-color: var(--branco);
-  padding: 10px;
+  background-color: #B30000;
   border-radius: 5px;
-  box-shadow: 0 0 5px var(--verde-priorado);
-}
-.vertical-left h2{
-  text-align: center;
-  margin-bottom: 10px;
-  font-family: var(--titulo);
-  color: var(--verde-priorado);
-  padding: 10px;
-}
-.vertical-left p{
-  text-align: justify;
-  padding: 10px;
-  line-height: 2em;
-}
-div.emblema{
-  text-align: center;
-}
-.emblema img{
-  height: 150px;
-  padding: 10px;
-  
-}
-.foto-evento{
-  border: 1px solid var(--cinza-medio);
-  text-align: center;
-  background-color: var(--cinza-claro);
-  
-  }
-.foto-evento img{
-  width: 90%;
-  margin: 10px;
-}
-/*pagina rito*/
-.rito{
-  width: 70%;
-  margin: 20px auto;
-  border: 1px solid var(--cinza-medio);
-  background-color: var(--branco);
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px var(--verde-priorado);
-  
-}
-.rito h2, h3{
-  margin: 20px;
-  padding: 20px;
-  font-family: var(--titulo);
-  color: var(--verde-priorado);
-}
-.rito p{
-  padding: 20px;
-  text-align: justify;
-  line-height: 1.5em;
-  margin: 0 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.rito li{
-  margin: 20px;
-  padding: 10px;
-  line-height: 1.5em;
-  text-align: justify;
-
-}
-/*main-central pafina index*/
-.eventos-loja{
-   max-width: 50%;
-  border: 1px solid var(--cinza-medio);
-  background-color: var(--branco);
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px var(--verde-priorado);
-  margin: 0 30px;
-}
-
-.eventos-loja span img{
-  width: 100px;
-  
-  
-}
-.eventos-loja h2{
-  text-align: center;
-  margin-bottom: 10px;
-  font-family: var(--titulo);
-  color: var(--verde-priorado);
-  padding: 10px;
-}
-.eventos-loja p{
-   text-align: justify;
-  padding: 10px;
-  line-height: 2em;
-}
-.img-evento-loja {
-  text-align: center;
-  
-}
-.img-evento-loja img{
-  width: 90%;
-}
-.banner{
-  text-align: center;
-  border: 3px solid var(--cinza-medio);
-  box-shadow: 0 0 3px var(--verde-priorado)
-}
-.banner img{
-  width: 90%;
 }
